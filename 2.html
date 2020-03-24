@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hello Web</title>
+    <style>
+      body{
+        margin:0;
+      }
+      .list a{
+        color:gray;
+        margin-bottom: 20px;
+        text-align: center;
+        display:block;
+      }
+      .align{
+        text-align: center;
+      }
+      a {
+        color:green;
+        text-decoration: none;
+      }
+      p{
+        line-height:30px;
+        margin: 0;
+      }
+      img{
+        border: 1px solid green;
+      }
+      h1 {
+        font-size:30x;
+        font-weight: 1;
+        margin-bottom:0;
+        text-align: center;
+        padding-bottom:10px;
+        border-bottom:1px solid gray;
+      }
+      .main {
+        margin-right:40px;
+        margin-left:40px;
+        padding-top: 20px;
+      }
+      #here {
+        color:black;
+      }
+      @media(min-width:651px) {
+        #grid{
+          display: grid;
+          grid-template-columns: 211px 1fr;
+        }
+        #grid ol {
+          border-right:1px solid gray;
+          width:150px;
+          height: 500px;
+          margin-top: 0px;
+          padding-top: 30px;
+          padding-right: 30px;
+          padding-left: 30px;
+        }
+      }
+      @media(max-width:650px){
+        ol{
+          border-right-width: 0px;
+          border-bottom:1px solid gray;
+        }
+        #grid ol {
+          border-bottom:1px solid gray;
+          width:100%;
+          height: 150px;
+          margin-top: 0px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-left: 0px;
+        }
+        .main {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="index.html" style="color:black">한국의 상징</a></h1>
+    <div id="grid">
+      <div>
+        <ol class="list">
+          <a href="1.html">1. 한국의 국가(國歌)</a>
+          <strong><a href="2.html" id="here">2. 한국의 국기(國旗)</a></strong>
+          <a href="3.html">3. 한국의 국화(國花)</a>
+          <a href="4.html">4. 한국의 국목(國木)</a>
+        </ol>
+      </div>
+      <div class="main">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/338px-Flag_of_South_Korea.svg.png" width="200px" class="align">
+        <h2><p style="margin-top:0px"><a href="https://ko.wikipedia.org/wiki/태극기" target="_blank">태극기</a></p></h2>
+        <p>대한민국의 국기. 흰색 배경 중앙에 파란색과 빨간색의 태극을, 네 귀퉁이에는 검은색의 사괘를 그린 것이다. 1882년 조선의 국기로 사용된 기록이 있으며, 1883년 조선의 정식 국기로 선포되었다. 대한제국이 1910년 국권을 상실한 이후 일본 정부에 의해 사용이 금지되었으나 <a href="https://ko.wikipedia.org/wiki/일제_강점기" target="_blank">일제 강점기</a> 내내 독립운동의 상징으로 기능하였으며, 1945년 광복과 함께 자유롭게 게양할 수 있게 되었다.</p>
+      </div>
+    </div>
+  </body>
+</html>
